@@ -68,7 +68,7 @@ export class HandlersCodegen {
                     `log.id`,
                     `log.block.height`,
                     `new Date(log.block.timestamp)`,
-                    `log.transaction!.hash`,
+                    `log.transactionHash`,
                     `log.address`,
                     `'${e}'`,
                     ...fragment.params.slice(6).map((p) => {
